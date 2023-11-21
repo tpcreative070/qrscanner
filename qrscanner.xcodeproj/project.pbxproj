@@ -12,6 +12,7 @@
 		D2AD27CC2B053969004963B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD27CB2B053969004963B9 /* ContentView.swift */; };
 		D2AD27CE2B05396A004963B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AD27CD2B05396A004963B9 /* Assets.xcassets */; };
 		D2AD27D12B05396A004963B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */; };
+		D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		D2AD27CB2B053969004963B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2AD27CD2B05396A004963B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRWriter.swift; sourceTree = "<group>"; };
 		DC7623CAF4B45380462C0CB1 /* Pods-qrscanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrscanner.release.xcconfig"; path = "Target Support Files/Pods-qrscanner/Pods-qrscanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +66,6 @@
 				1F36EB772D4DC76772834B58 /* Pods-qrscanner.debug.xcconfig */,
 				DC7623CAF4B45380462C0CB1 /* Pods-qrscanner.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -93,6 +94,7 @@
 				D2AD27CB2B053969004963B9 /* ContentView.swift */,
 				D2AD27CD2B05396A004963B9 /* Assets.xcassets */,
 				D2AD27CF2B05396A004963B9 /* Preview Content */,
+				D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */,
 			);
 			path = qrscanner;
 			sourceTree = "<group>";
@@ -221,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */,
 				D2AD27CC2B053969004963B9 /* ContentView.swift in Sources */,
 				D2AD27CA2B053969004963B9 /* qrscannerApp.swift in Sources */,
 			);

@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var image : CGImage?
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+            if let cgImage = image {
+                Image(uiImage: UIImage(cgImage: cgImage))
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+            }
+          
             Text("Hello, world!")
         }
         .padding()
+        .onAppear(){
+            image = QRWriter().writeQRCode()
+        }
     }
 }
 

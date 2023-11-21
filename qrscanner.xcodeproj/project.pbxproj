@@ -32,7 +32,6 @@
 		D2AD27CB2B053969004963B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2AD27CD2B05396A004963B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D2E0B2262B0C5DB800F8E784 /* qrscanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qrscanner-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,20 +45,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2592C0B2AEC480D1C9CF804B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		D2AD27BD2B053969004963B9 = {
 			isa = PBXGroup;
 			children = (
 				D2AD27C82B053969004963B9 /* qrscanner */,
 				D2AD27C72B053969004963B9 /* Products */,
-				D2E0B2262B0C5DB800F8E784 /* qrscanner-Bridging-Header.h */,
-				2592C0B2AEC480D1C9CF804B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -316,7 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.tpcreative.qrscanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "qrscanner-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -350,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.tpcreative.qrscanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "qrscanner-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

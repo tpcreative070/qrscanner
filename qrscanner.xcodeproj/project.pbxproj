@@ -13,6 +13,10 @@
 		D2AD27CE2B05396A004963B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AD27CD2B05396A004963B9 /* Assets.xcassets */; };
 		D2AD27D12B05396A004963B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */; };
 		D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */; };
+		D2E0B2382B0CA15900F8E784 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B2372B0CA15900F8E784 /* SettingsView.swift */; };
+		D2E0B23A2B0CA23900F8E784 /* MyCodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */; };
+		D2E0B23C2B0CA2A000F8E784 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B23B2B0CA2A000F8E784 /* HistoryView.swift */; };
+		D2E0B23E2B0CA30900F8E784 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B23D2B0CA30900F8E784 /* ScanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +41,10 @@
 		D2AD27CD2B05396A004963B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRWriter.swift; sourceTree = "<group>"; };
+		D2E0B2372B0CA15900F8E784 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCodesView.swift; sourceTree = "<group>"; };
+		D2E0B23B2B0CA2A000F8E784 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		D2E0B23D2B0CA30900F8E784 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		DC7623CAF4B45380462C0CB1 /* Pods-qrscanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrscanner.release.xcconfig"; path = "Target Support Files/Pods-qrscanner/Pods-qrscanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +98,8 @@
 		D2AD27C82B053969004963B9 /* qrscanner */ = {
 			isa = PBXGroup;
 			children = (
+				D2E0B2322B0C86B900F8E784 /* common */,
+				D2E0B2312B0C86AA00F8E784 /* ui */,
 				D2AD27C92B053969004963B9 /* qrscannerApp.swift */,
 				D2AD27CB2B053969004963B9 /* ContentView.swift */,
 				D2AD27CD2B05396A004963B9 /* Assets.xcassets */,
@@ -105,6 +115,56 @@
 				D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D2E0B2312B0C86AA00F8E784 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0B2362B0CA14B00F8E784 /* settings */,
+				D2E0B2352B0CA14200F8E784 /* mycodes */,
+				D2E0B2342B0CA13500F8E784 /* history */,
+				D2E0B2332B0CA11200F8E784 /* scan */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		D2E0B2322B0C86B900F8E784 /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		D2E0B2332B0CA11200F8E784 /* scan */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0B23D2B0CA30900F8E784 /* ScanView.swift */,
+			);
+			path = scan;
+			sourceTree = "<group>";
+		};
+		D2E0B2342B0CA13500F8E784 /* history */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0B23B2B0CA2A000F8E784 /* HistoryView.swift */,
+			);
+			path = history;
+			sourceTree = "<group>";
+		};
+		D2E0B2352B0CA14200F8E784 /* mycodes */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */,
+			);
+			path = mycodes;
+			sourceTree = "<group>";
+		};
+		D2E0B2362B0CA14B00F8E784 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				D2E0B2372B0CA15900F8E784 /* SettingsView.swift */,
+			);
+			path = settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,7 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E0B23E2B0CA30900F8E784 /* ScanView.swift in Sources */,
+				D2E0B23A2B0CA23900F8E784 /* MyCodesView.swift in Sources */,
+				D2E0B23C2B0CA2A000F8E784 /* HistoryView.swift in Sources */,
 				D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */,
+				D2E0B2382B0CA15900F8E784 /* SettingsView.swift in Sources */,
 				D2AD27CC2B053969004963B9 /* ContentView.swift in Sources */,
 				D2AD27CA2B053969004963B9 /* qrscannerApp.swift in Sources */,
 			);
@@ -284,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -341,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

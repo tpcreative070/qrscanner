@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var image : CGImage?
     var body: some View {
         TabView {
             ScanView()

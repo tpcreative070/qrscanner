@@ -7,13 +7,22 @@
 
 import Foundation
 import SwiftUI
+import RealmSwift
 struct MyCodesView  : View{
     
-    var body   : some View {
-        VStack {
-            Text("My codes")
-        }
-    }
+    @ObservedResults(HistoryModel.self) var persons
+       
+       var body: some View {
+           List {
+               ForEach(persons) { person in
+                   Text(person._id)
+               }
+             
+               .onDelete(perform: $persons.remove)
+           }.onAppear(){
+               $persons.append(HistoryModel())
+           }
+       }
     
 }
 

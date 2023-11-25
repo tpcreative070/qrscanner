@@ -12,22 +12,22 @@ struct ContentView: View {
         TabView {
             ScanView()
                 .tabItem {
-                    Label("Scan", systemImage: "list.dash")
+                    Label("Scan", systemImage: "barcode.viewfinder")
                 }
             
             HistoryView()
                 .tabItem {
-                    Label("History", systemImage: "square.and.pencil")
+                    Label("History", systemImage: "clock.fill")
                 }
             
             MyCodesView()
                 .tabItem {
-                    Label("My codes", systemImage: "square.and.pencil")
+                    Label("My codes", systemImage: "qrcode")
                 }
             
             SettingsView()
                 .tabItem {
-                    Label("Settings", systemImage: "square.and.pencil")
+                    Label("Settings", systemImage: "gear")
                 }
         }
         //        VStack {

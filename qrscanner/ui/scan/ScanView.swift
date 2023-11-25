@@ -53,48 +53,55 @@ struct ScanView : View {
     @State var barcodeValue = ""
     @State var torchIsOn = false
     @State var showingAlert = false
+    @State var showingDetailsView = false
     @State var cameraPosition = AVCaptureDevice.Position.back
     
     var body: some View {
-        VStack {
-            
-            CBScanner(
-                supportBarcode: .constant([.qr, .code128]), //Set type of barcode you want to scan
-                scanInterval: .constant(5.0) //Event will trigger every 5 seconds
-            ){
-                //When the scanner found a barcode
-                print("BarCodeType =",$0.type.rawValue, "Value =",$0.value)
-                barcodeValue = $0.value
-            }
-        onDraw: {
-            print("Preview View Size = \($0.cameraPreviewView.bounds)")
-            print("Barcode Corners = \($0.corners)")
-            
-            //line width
-            let lineWidth = 2
-            
-            //line color
-            let lineColor = UIColor.green
-            
-            //Fill color with opacity
-            //You also can use UIColor.clear if you don't want to draw fill color
-            let fillColor = UIColor(red: 0, green: 1, blue: 0.2, alpha: 0.4)
-            
-            //Draw box
-            $0.draw(lineWidth: CGFloat(lineWidth), lineColor: lineColor, fillColor: fillColor)
-        }
-        .overlay(cameraFrame()
-            .stroke(lineWidth: 3)
-            .frame(width: 250, height: 250)
-            .foregroundColor(.green))
-            
-        .overlay {
+        NavigationView {
             VStack {
-                Text(barcodeValue)
+                            
+                CBScanner(
+                    supportBarcode: .constant([.qr, .code128,.aztec,.code39,.code93,.dataMatrix,.ean13,.ean8,.upce,.itf14]), //Set type of barcode you want to scan
+                    scanInterval: .constant(5.0) //Event will trigger every 5 seconds
+                ){
+                    //When the scanner found a barcode
+    //                print("BarCodeType =",$0.type.rawValue, "Value =",$0.value)
+                    barcodeValue = $0.value
+                    showingDetailsView = true
+                    print("barcode value \($0.value)")
+                    print("barcode type \($0.type.rawValue)")
+                }
+            onDraw: {
+    //            print("Preview View Size = \($0.cameraPreviewView.bounds)")
+    //            print("Barcode Corners = \($0.corners)")
+                
+                //line width
+                let lineWidth = 2
+                
+                //line color
+                let lineColor = UIColor.green
+                
+                //Fill color with opacity
+                //You also can use UIColor.clear if you don't want to draw fill color
+                let fillColor = UIColor(red: 0, green: 1, blue: 0.2, alpha: 0.4)
+                
+                //Draw box
+                $0.draw(lineWidth: CGFloat(lineWidth), lineColor: lineColor, fillColor: fillColor)
             }
-        }
-        }.alert(isPresented: $showingAlert) {
-            Alert(title: Text("Found Barcode"), message: Text("\(barcodeValue)"), dismissButton: .default(Text("Close")))
+            .overlay(cameraFrame()
+                .stroke(lineWidth: 3)
+                .frame(width: 250, height: 250)
+                .foregroundColor(.green))
+                
+            .overlay {
+    //            VStack {
+    //                Text(barcodeValue)
+    //            }
+            }
+            NavigationLink(destination: DetailsView(), isActive: $showingDetailsView, label: { EmptyView() })
+            }.alert(isPresented: $showingAlert) {
+                Alert(title: Text("Found Barcode"), message: Text("\(barcodeValue)"), dismissButton: .default(Text("Close")))
+            }
         }
     }
 }

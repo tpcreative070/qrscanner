@@ -12,11 +12,12 @@
 		D20C976D2B0F297100EA3677 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D20C976C2B0F297100EA3677 /* RealmSwift */; };
 		D20C97702B0F29B400EA3677 /* ZXingCpp in Frameworks */ = {isa = PBXBuildFile; productRef = D20C976F2B0F29B400EA3677 /* ZXingCpp */; };
 		D26E53A72B0E372C005DE71A /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E53A62B0E372C005DE71A /* HistoryModel.swift */; };
-		D26E53A92B0E3750005DE71A /* GenerateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E53A82B0E3750005DE71A /* GenerateModel.swift */; };
 		D2AD27CA2B053969004963B9 /* qrscannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD27C92B053969004963B9 /* qrscannerApp.swift */; };
 		D2AD27CC2B053969004963B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD27CB2B053969004963B9 /* ContentView.swift */; };
 		D2AD27CE2B05396A004963B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AD27CD2B05396A004963B9 /* Assets.xcassets */; };
 		D2AD27D12B05396A004963B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */; };
+		D2B221F82B12E63600E2EDE8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221F72B12E63600E2EDE8 /* Constant.swift */; };
+		D2B221FB2B12E6DF00E2EDE8 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221FA2B12E6DF00E2EDE8 /* ColorExtension.swift */; };
 		D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */; };
 		D2E0B2382B0CA15900F8E784 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B2372B0CA15900F8E784 /* SettingsView.swift */; };
 		D2E0B23A2B0CA23900F8E784 /* MyCodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */; };
@@ -45,12 +46,13 @@
 /* Begin PBXFileReference section */
 		D20796202B1180B000BBEE6E /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		D26E53A62B0E372C005DE71A /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
-		D26E53A82B0E3750005DE71A /* GenerateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateModel.swift; sourceTree = "<group>"; };
 		D2AD27C62B053969004963B9 /* qrscanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrscanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AD27C92B053969004963B9 /* qrscannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrscannerApp.swift; sourceTree = "<group>"; };
 		D2AD27CB2B053969004963B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2AD27CD2B05396A004963B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2B221F72B12E63600E2EDE8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D2B221FA2B12E6DF00E2EDE8 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRWriter.swift; sourceTree = "<group>"; };
 		D2E0B2372B0CA15900F8E784 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCodesView.swift; sourceTree = "<group>"; };
@@ -109,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				D26E53A62B0E372C005DE71A /* HistoryModel.swift */,
-				D26E53A82B0E3750005DE71A /* GenerateModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -133,6 +134,7 @@
 		D2AD27C82B053969004963B9 /* qrscanner */ = {
 			isa = PBXGroup;
 			children = (
+				D2B221F92B12E6C600E2EDE8 /* extension */,
 				D26E53A52B0E3719005DE71A /* model */,
 				D26E539B2B0E34F5005DE71A /* view */,
 				D2E0B2322B0C86B900F8E784 /* common */,
@@ -153,6 +155,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D2B221F92B12E6C600E2EDE8 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				D2B221FA2B12E6DF00E2EDE8 /* ColorExtension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		D2E0B2312B0C86AA00F8E784 /* ui */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */,
+				D2B221F72B12E63600E2EDE8 /* Constant.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -289,8 +300,10 @@
 				D2E0B23E2B0CA30900F8E784 /* ScanView.swift in Sources */,
 				D2E0B23A2B0CA23900F8E784 /* MyCodesView.swift in Sources */,
 				D2F2A91A2B1078B400FDDB44 /* BarcodeData.swift in Sources */,
+				D2B221F82B12E63600E2EDE8 /* Constant.swift in Sources */,
 				D2F2A91E2B1078B400FDDB44 /* CBScanner.swift in Sources */,
 				D2E0B23C2B0CA2A000F8E784 /* HistoryView.swift in Sources */,
+				D2B221FB2B12E6DF00E2EDE8 /* ColorExtension.swift in Sources */,
 				D2F2A91D2B1078B400FDDB44 /* BarcodeFrame.swift in Sources */,
 				D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */,
 				D26E53A72B0E372C005DE71A /* HistoryModel.swift in Sources */,
@@ -300,7 +313,6 @@
 				D20796212B1180B000BBEE6E /* DetailsView.swift in Sources */,
 				D2AD27CA2B053969004963B9 /* qrscannerApp.swift in Sources */,
 				D2F2A91C2B1078B400FDDB44 /* CBBarcodeView.swift in Sources */,
-				D26E53A92B0E3750005DE71A /* GenerateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

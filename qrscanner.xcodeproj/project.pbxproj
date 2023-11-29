@@ -12,10 +12,15 @@
 		D20C976D2B0F297100EA3677 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D20C976C2B0F297100EA3677 /* RealmSwift */; };
 		D20C97702B0F29B400EA3677 /* ZXingCpp in Frameworks */ = {isa = PBXBuildFile; productRef = D20C976F2B0F29B400EA3677 /* ZXingCpp */; };
 		D26E53A72B0E372C005DE71A /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E53A62B0E372C005DE71A /* HistoryModel.swift */; };
+		D29CCABD2B144B8E006674D4 /* WriteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29CCABC2B144B8E006674D4 /* WriteHelper.swift */; };
+		D29CCABF2B147FDF006674D4 /* GenerateCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29CCABE2B147FDF006674D4 /* GenerateCategoryView.swift */; };
 		D2AD27CA2B053969004963B9 /* qrscannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD27C92B053969004963B9 /* qrscannerApp.swift */; };
 		D2AD27CC2B053969004963B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD27CB2B053969004963B9 /* ContentView.swift */; };
 		D2AD27CE2B05396A004963B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AD27CD2B05396A004963B9 /* Assets.xcassets */; };
 		D2AD27D12B05396A004963B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */; };
+		D2AD28572B16D2B3003080DA /* QRCodeCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD28562B16D2B3003080DA /* QRCodeCategoryModel.swift */; };
+		D2AD28592B16E0A4003080DA /* GenerateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD28582B16E0A4003080DA /* GenerateView.swift */; };
+		D2AD285C2B17263D003080DA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D2AD285B2B17263D003080DA /* Kingfisher */; };
 		D2B221F82B12E63600E2EDE8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221F72B12E63600E2EDE8 /* Constant.swift */; };
 		D2B221FB2B12E6DF00E2EDE8 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221FA2B12E6DF00E2EDE8 /* ColorExtension.swift */; };
 		D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */; };
@@ -46,11 +51,15 @@
 /* Begin PBXFileReference section */
 		D20796202B1180B000BBEE6E /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		D26E53A62B0E372C005DE71A /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		D29CCABC2B144B8E006674D4 /* WriteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteHelper.swift; sourceTree = "<group>"; };
+		D29CCABE2B147FDF006674D4 /* GenerateCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCategoryView.swift; sourceTree = "<group>"; };
 		D2AD27C62B053969004963B9 /* qrscanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrscanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AD27C92B053969004963B9 /* qrscannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrscannerApp.swift; sourceTree = "<group>"; };
 		D2AD27CB2B053969004963B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2AD27CD2B05396A004963B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2AD27D02B05396A004963B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2AD28562B16D2B3003080DA /* QRCodeCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeCategoryModel.swift; sourceTree = "<group>"; };
+		D2AD28582B16E0A4003080DA /* GenerateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateView.swift; sourceTree = "<group>"; };
 		D2B221F72B12E63600E2EDE8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D2B221FA2B12E6DF00E2EDE8 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRWriter.swift; sourceTree = "<group>"; };
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2AD285C2B17263D003080DA /* Kingfisher in Frameworks */,
 				D20C976D2B0F297100EA3677 /* RealmSwift in Frameworks */,
 				D20C976B2B0F297100EA3677 /* Realm in Frameworks */,
 				D20C97702B0F29B400EA3677 /* ZXingCpp in Frameworks */,
@@ -111,8 +121,24 @@
 			isa = PBXGroup;
 			children = (
 				D26E53A62B0E372C005DE71A /* HistoryModel.swift */,
+				D2AD28562B16D2B3003080DA /* QRCodeCategoryModel.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		D29CCABA2B144B48006674D4 /* WriteHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D29CCABC2B144B8E006674D4 /* WriteHelper.swift */,
+			);
+			path = WriteHelper;
+			sourceTree = "<group>";
+		};
+		D29CCABB2B144B73006674D4 /* ReadHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReadHelper;
 			sourceTree = "<group>";
 		};
 		D2AD27BD2B053969004963B9 = {
@@ -178,6 +204,8 @@
 		D2E0B2322B0C86B900F8E784 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				D29CCABB2B144B73006674D4 /* ReadHelper */,
+				D29CCABA2B144B48006674D4 /* WriteHelper */,
 				D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */,
 				D2B221F72B12E63600E2EDE8 /* Constant.swift */,
 			);
@@ -204,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */,
+				D29CCABE2B147FDF006674D4 /* GenerateCategoryView.swift */,
+				D2AD28582B16E0A4003080DA /* GenerateView.swift */,
 			);
 			path = mycodes;
 			sourceTree = "<group>";
@@ -237,6 +267,7 @@
 				D20C976A2B0F297100EA3677 /* Realm */,
 				D20C976C2B0F297100EA3677 /* RealmSwift */,
 				D20C976F2B0F29B400EA3677 /* ZXingCpp */,
+				D2AD285B2B17263D003080DA /* Kingfisher */,
 			);
 			productName = qrscanner;
 			productReference = D2AD27C62B053969004963B9 /* qrscanner.app */;
@@ -270,6 +301,7 @@
 			packageReferences = (
 				D20C97692B0F297100EA3677 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				D20C976E2B0F29B400EA3677 /* XCRemoteSwiftPackageReference "zxing-cpp" */,
+				D2AD285A2B17263D003080DA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = D2AD27C72B053969004963B9 /* Products */;
 			projectDirPath = "";
@@ -298,7 +330,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2E0B23E2B0CA30900F8E784 /* ScanView.swift in Sources */,
+				D29CCABD2B144B8E006674D4 /* WriteHelper.swift in Sources */,
 				D2E0B23A2B0CA23900F8E784 /* MyCodesView.swift in Sources */,
+				D2AD28592B16E0A4003080DA /* GenerateView.swift in Sources */,
 				D2F2A91A2B1078B400FDDB44 /* BarcodeData.swift in Sources */,
 				D2B221F82B12E63600E2EDE8 /* Constant.swift in Sources */,
 				D2F2A91E2B1078B400FDDB44 /* CBScanner.swift in Sources */,
@@ -308,8 +342,10 @@
 				D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */,
 				D26E53A72B0E372C005DE71A /* HistoryModel.swift in Sources */,
 				D2F2A91B2B1078B400FDDB44 /* CameraPreview.swift in Sources */,
+				D29CCABF2B147FDF006674D4 /* GenerateCategoryView.swift in Sources */,
 				D2E0B2382B0CA15900F8E784 /* SettingsView.swift in Sources */,
 				D2AD27CC2B053969004963B9 /* ContentView.swift in Sources */,
+				D2AD28572B16D2B3003080DA /* QRCodeCategoryModel.swift in Sources */,
 				D20796212B1180B000BBEE6E /* DetailsView.swift in Sources */,
 				D2AD27CA2B053969004963B9 /* qrscannerApp.swift in Sources */,
 				D2F2A91C2B1078B400FDDB44 /* CBBarcodeView.swift in Sources */,
@@ -553,6 +589,14 @@
 				kind = branch;
 			};
 		};
+		D2AD285A2B17263D003080DA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -570,6 +614,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D20C976E2B0F29B400EA3677 /* XCRemoteSwiftPackageReference "zxing-cpp" */;
 			productName = ZXingCpp;
+		};
+		D2AD285B2B17263D003080DA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2AD285A2B17263D003080DA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

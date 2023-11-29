@@ -16,7 +16,4 @@ public struct BarcodeFrame {
             lineColor: lineColor,
             fillColor: fillColor)
     }
-    
-    
-
 }

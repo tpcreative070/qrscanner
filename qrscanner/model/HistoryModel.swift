@@ -51,6 +51,15 @@ class HistoryModel  : Object ,Identifiable {
     override init() {
         
     }
+    
+    //uri
+    
+    init(url : String) {
+        super.init()
+        self.url = url
+        self.typeSave = .HISTORY
+        self.createType = EnumType.URL.rawValue
+    }
 }
 
 

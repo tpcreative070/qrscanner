@@ -23,6 +23,9 @@
 		D2AD285C2B17263D003080DA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D2AD285B2B17263D003080DA /* Kingfisher */; };
 		D2B221F82B12E63600E2EDE8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221F72B12E63600E2EDE8 /* Constant.swift */; };
 		D2B221FB2B12E6DF00E2EDE8 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221FA2B12E6DF00E2EDE8 /* ColorExtension.swift */; };
+		D2B244172B18757800D649A5 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B244162B18757800D649A5 /* MyTextField.swift */; };
+		D2B244192B18804900D649A5 /* ApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B244182B18804900D649A5 /* ApplicationExtension.swift */; };
+		D2B2441B2B1881AD00D649A5 /* MyReviewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2441A2B1881AD00D649A5 /* MyReviewCode.swift */; };
 		D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */; };
 		D2E0B2382B0CA15900F8E784 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B2372B0CA15900F8E784 /* SettingsView.swift */; };
 		D2E0B23A2B0CA23900F8E784 /* MyCodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */; };
@@ -62,6 +65,9 @@
 		D2AD28582B16E0A4003080DA /* GenerateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateView.swift; sourceTree = "<group>"; };
 		D2B221F72B12E63600E2EDE8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D2B221FA2B12E6DF00E2EDE8 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		D2B244162B18757800D649A5 /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
+		D2B244182B18804900D649A5 /* ApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationExtension.swift; sourceTree = "<group>"; };
+		D2B2441A2B1881AD00D649A5 /* MyReviewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviewCode.swift; sourceTree = "<group>"; };
 		D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRWriter.swift; sourceTree = "<group>"; };
 		D2E0B2372B0CA15900F8E784 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCodesView.swift; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D26E539C2B0E34FC005DE71A /* carbode */,
+				D2B244162B18757800D649A5 /* MyTextField.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -185,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				D2B221FA2B12E6DF00E2EDE8 /* ColorExtension.swift */,
+				D2B244182B18804900D649A5 /* ApplicationExtension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */,
 				D29CCABE2B147FDF006674D4 /* GenerateCategoryView.swift */,
 				D2AD28582B16E0A4003080DA /* GenerateView.swift */,
+				D2B2441A2B1881AD00D649A5 /* MyReviewCode.swift */,
 			);
 			path = mycodes;
 			sourceTree = "<group>";
@@ -329,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B2441B2B1881AD00D649A5 /* MyReviewCode.swift in Sources */,
 				D2E0B23E2B0CA30900F8E784 /* ScanView.swift in Sources */,
 				D29CCABD2B144B8E006674D4 /* WriteHelper.swift in Sources */,
 				D2E0B23A2B0CA23900F8E784 /* MyCodesView.swift in Sources */,
@@ -341,9 +351,11 @@
 				D2F2A91D2B1078B400FDDB44 /* BarcodeFrame.swift in Sources */,
 				D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */,
 				D26E53A72B0E372C005DE71A /* HistoryModel.swift in Sources */,
+				D2B244192B18804900D649A5 /* ApplicationExtension.swift in Sources */,
 				D2F2A91B2B1078B400FDDB44 /* CameraPreview.swift in Sources */,
 				D29CCABF2B147FDF006674D4 /* GenerateCategoryView.swift in Sources */,
 				D2E0B2382B0CA15900F8E784 /* SettingsView.swift in Sources */,
+				D2B244172B18757800D649A5 /* MyTextField.swift in Sources */,
 				D2AD27CC2B053969004963B9 /* ContentView.swift in Sources */,
 				D2AD28572B16D2B3003080DA /* QRCodeCategoryModel.swift in Sources */,
 				D20796212B1180B000BBEE6E /* DetailsView.swift in Sources */,

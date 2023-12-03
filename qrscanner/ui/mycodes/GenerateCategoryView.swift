@@ -23,7 +23,7 @@ struct GenerateCategoryView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(data , id : \.self) { item in
                         NavigationLink(destination:
-                            GenerateView()
+                            GenerateView(text: "")
                         ) {
                             VStack {
                                 Image(systemName: item.icon)

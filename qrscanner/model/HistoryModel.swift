@@ -52,16 +52,95 @@ class HistoryModel  : Object ,Identifiable {
         
     }
     
-    //uri
+    init(data : GenerateModel) {
+        super.init()
+        self.text = data._text
+        self.typeSave = .GENERATE
+        self.createType = EnumType.TEXT.rawValue
+    }
     
+    //uri
     init(url : String) {
         super.init()
         self.url = url
         self.typeSave = .HISTORY
         self.createType = EnumType.URL.rawValue
     }
+    
+    /**This is scanner area**/
+    
+    //GEO
+    init(latitude: Double, longtitude: Double, query: String) {
+        super.init()
+        self.lat = latitude
+        self.lon = longtitude
+        self.query = query
+    }
+    
+    
+    //Email
+    init(email: String, subjectEmail: String, messageEmail: String){
+        super.init()
+        self.email = email
+        self.subject = subjectEmail
+        self.message = messageEmail
+    }
+    
+    //Calender
+    init(title: String, location: String, description: String, startEvent: String, endEvent: String){
+        super.init()
+        self.title = title
+        self.location = location
+        self._description = description
+        self.startEvent = startEvent
+        self.endEvent = endEvent
+    }
+    
+    //Message
+    init(to : String, message : String) {
+        super.init()
+        self.phone = phone
+        self.message = message
+    }
+    
+    //Wifi
+    init(ssid: String, password: String, protect: String, hidden: Bool) {
+        super.init()
+        self.ssId = ssid
+        self.password = password
+        self.networkEncryption  = protect
+        self.hidden = hidden
+    }
+    
+    
+    //Contact
+    init(fullNameContact: String, addressContact: String, phoneContact: String, emailContact: String){
+        super.init()
+        self.fullName = fullNameContact
+        self.address = addressContact
+        self.phone = phoneContact
+        self.email = emailContact
+    }
+    
+    //phone
+    init(phone : String) {
+        super.init()
+        self.phone = phone
+    }
+    
+    //barcode format
+    init(productId : String, type : BarcodeType) {
+        super.init()
+        self.text = productId
+        self.barcodeFormat = type.rawValue
+    }
+    
+    //text
+    init(text : String) {
+        super.init()
+        self.text = text
+    }
 }
-
 
 enum EnumTypeSave : String, PersistableEnum {
     case HISTORY,GENERATE

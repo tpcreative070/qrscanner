@@ -8,11 +8,13 @@
 import Foundation
 import SwiftUI
 import Kingfisher
+import RealmSwift
 
 struct MyReviewCode : View {
     
     var data : GenerateModel
     @State var image : CGImage?
+    @ObservedResults(HistoryModel.self) var itemsList
     
     var body: some View {
         ScrollView {
@@ -77,29 +79,27 @@ struct MyReviewCode : View {
             
             .toolbar{
                 ToolbarItemGroup(placement: .navigationBarTrailing, content: {
-                    Button {
-                        print("Trash")
-                    }label: {
-                        Image(systemName: "trash")
-                    }
+                    
+//                    Button {
+//                        print("Trash")
+//                    }label: {
+//                        Image(systemName: "trash")
+//                    }
+//                    
+//                    Button {
+//                        print("Copy")
+//                    }label: {
+//                        Image(systemName: "plus.rectangle.on.rectangle")
+//                    }
+//                    
+//                    Button {
+//                        print("Duplicated")
+//                    }label: {
+//                        Image(systemName: "square.and.pencil")
+//                    }
                     
                     Button {
-                        print("Copy")
-                    }label: {
-                        Image(systemName: "plus.rectangle.on.rectangle")
-                    }
-                    
-                    Button {
-                        print("Duplicated")
-                    }label: {
-                        Image(systemName: "square.and.pencil")
-                    }
-                    
-                    Button {
-                        
-                        
-                        
-                        
+                        $itemsList.append(HistoryModel(data:data))
                         print("Done")
                     }label: {
                         Text("Done")

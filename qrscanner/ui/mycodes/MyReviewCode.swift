@@ -8,17 +8,23 @@
 import Foundation
 import SwiftUI
 import Kingfisher
+
 struct MyReviewCode : View {
-  
+    
+    var data : GenerateModel
+    @State var image : CGImage?
+    
     var body: some View {
         ScrollView {
             VStack {
                Text("QR code - Text")
-                KFImage(URL(string: "https://upload.wikimedia.org/wikipedia/commons/3/31/MM_QRcode.png")!)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding(EdgeInsets(top: 30, leading: 30, bottom: 30, trailing: 30))
-                .frame(maxWidth:400,maxHeight:400)
+                if let mImage = image {
+                    Image(uiImage: UIImage(cgImage: mImage))
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(EdgeInsets(top: 30, leading: 30, bottom: 30, trailing: 30))
+                        .frame(maxWidth:400,maxHeight:400)
+                }
             }
             VStack(alignment: .leading, content: {
                 HStack() {
@@ -46,7 +52,7 @@ struct MyReviewCode : View {
                 
             VStack(alignment: .leading,content :{
                 Text("QR code-Text")
-                Text("Hello")
+                Text(data._text)
                 Spacer()
             })
             .frame(maxWidth:.infinity,alignment :.leading)
@@ -90,6 +96,10 @@ struct MyReviewCode : View {
                     }
                     
                     Button {
+                        
+                        
+                        
+                        
                         print("Done")
                     }label: {
                         Text("Done")
@@ -97,9 +107,12 @@ struct MyReviewCode : View {
                 })
             }
         }.background(Color(hex: Constant.light_gray))
+        .onAppear(){
+            self.image = QRWriter().writeQRCode(data._text)
+        }
     }
 }
 
 #Preview {
-    MyReviewCode()
+    MyReviewCode(data: GenerateModel())
 }

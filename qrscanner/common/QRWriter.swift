@@ -9,9 +9,9 @@ import Foundation
 import ZXingCpp
 class QRWriter {
     
-    func writeQRCode() -> CGImage?{
+    func writeQRCode(_ value : String) -> CGImage?{
         let hints = ZXIEncodeHints(format: .QR_CODE, width: 200, height: 200, ecLevel: QR_ERROR_CORRECTION_LOW, margin: -1)
-        guard let image = try? ZXIBarcodeWriter().write("Hello", hints: hints)else {return nil}
+        guard let image = try? ZXIBarcodeWriter().write(value, hints: hints)else {return nil}
         return image.takeRetainedValue()
     }
     

@@ -28,7 +28,7 @@ struct GenerateView : View {
                 }label: {
                     Text("Create")
                 }
-                NavigationLink(destination: MyReviewCode(), isActive: $isShowMyReviewCode, label: { EmptyView() })
+                NavigationLink(destination: MyReviewCode(data: GenerateModel(text: text)), isActive: $isShowMyReviewCode, label: { EmptyView() })
             }
         }
     }

@@ -7,11 +7,14 @@
 
 import SwiftUI
 import ZXingCpp
+import RealmSwift
 @main
-struct qrscannerApp: App {
+struct qrscannerApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().onAppear(){
+                print(Realm.Configuration.defaultConfiguration.fileURL!)
+            }
         }
     }
 }

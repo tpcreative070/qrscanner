@@ -23,7 +23,7 @@ struct HistoryView : View {
         }
         .padding()
         .onAppear(){
-            image = QRWriter().writeQRCode()
+            image = QRWriter().writeQRCode("Hello")
         }
     }
 }

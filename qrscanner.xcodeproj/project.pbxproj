@@ -11,6 +11,7 @@
 		D20C976B2B0F297100EA3677 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D20C976A2B0F297100EA3677 /* Realm */; };
 		D20C976D2B0F297100EA3677 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D20C976C2B0F297100EA3677 /* RealmSwift */; };
 		D20C97702B0F29B400EA3677 /* ZXingCpp in Frameworks */ = {isa = PBXBuildFile; productRef = D20C976F2B0F29B400EA3677 /* ZXingCpp */; };
+		D24D43C82B1C5C4D00CF7F67 /* GenerateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D43C72B1C5C4D00CF7F67 /* GenerateModel.swift */; };
 		D26E53A72B0E372C005DE71A /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E53A62B0E372C005DE71A /* HistoryModel.swift */; };
 		D29CCABD2B144B8E006674D4 /* WriteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29CCABC2B144B8E006674D4 /* WriteHelper.swift */; };
 		D29CCABF2B147FDF006674D4 /* GenerateCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29CCABE2B147FDF006674D4 /* GenerateCategoryView.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		D20796202B1180B000BBEE6E /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		D24D43C72B1C5C4D00CF7F67 /* GenerateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateModel.swift; sourceTree = "<group>"; };
 		D26E53A62B0E372C005DE71A /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		D29CCABC2B144B8E006674D4 /* WriteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteHelper.swift; sourceTree = "<group>"; };
 		D29CCABE2B147FDF006674D4 /* GenerateCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCategoryView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				D26E53A62B0E372C005DE71A /* HistoryModel.swift */,
 				D2AD28562B16D2B3003080DA /* QRCodeCategoryModel.swift */,
+				D24D43C72B1C5C4D00CF7F67 /* GenerateModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				D2F2A91E2B1078B400FDDB44 /* CBScanner.swift in Sources */,
 				D2E0B23C2B0CA2A000F8E784 /* HistoryView.swift in Sources */,
 				D2B221FB2B12E6DF00E2EDE8 /* ColorExtension.swift in Sources */,
+				D24D43C82B1C5C4D00CF7F67 /* GenerateModel.swift in Sources */,
 				D2F2A91D2B1078B400FDDB44 /* BarcodeFrame.swift in Sources */,
 				D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */,
 				D26E53A72B0E372C005DE71A /* HistoryModel.swift in Sources */,

@@ -30,6 +30,7 @@
 		D2B244172B18757800D649A5 /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B244162B18757800D649A5 /* MyTextField.swift */; };
 		D2B244192B18804900D649A5 /* ApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B244182B18804900D649A5 /* ApplicationExtension.swift */; };
 		D2B2441B2B1881AD00D649A5 /* MyReviewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2441A2B1881AD00D649A5 /* MyReviewCode.swift */; };
+		D2BD13E92B1ECA3C00CDA1EB /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = D2BD13E82B1ECA3C00CDA1EB /* Defaults */; };
 		D2E0B2302B0C7DCA00F8E784 /* QRWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B22F2B0C7DCA00F8E784 /* QRWriter.swift */; };
 		D2E0B2382B0CA15900F8E784 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B2372B0CA15900F8E784 /* SettingsView.swift */; };
 		D2E0B23A2B0CA23900F8E784 /* MyCodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E0B2392B0CA23900F8E784 /* MyCodesView.swift */; };
@@ -97,6 +98,7 @@
 				D20C976D2B0F297100EA3677 /* RealmSwift in Frameworks */,
 				D20C976B2B0F297100EA3677 /* Realm in Frameworks */,
 				D20C97702B0F29B400EA3677 /* ZXingCpp in Frameworks */,
+				D2BD13E92B1ECA3C00CDA1EB /* Defaults in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +283,7 @@
 				D20C976C2B0F297100EA3677 /* RealmSwift */,
 				D20C976F2B0F29B400EA3677 /* ZXingCpp */,
 				D2AD285B2B17263D003080DA /* Kingfisher */,
+				D2BD13E82B1ECA3C00CDA1EB /* Defaults */,
 			);
 			productName = qrscanner;
 			productReference = D2AD27C62B053969004963B9 /* qrscanner.app */;
@@ -315,6 +318,7 @@
 				D20C97692B0F297100EA3677 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				D20C976E2B0F29B400EA3677 /* XCRemoteSwiftPackageReference "zxing-cpp" */,
 				D2AD285A2B17263D003080DA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D2BD13E72B1ECA3C00CDA1EB /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			productRefGroup = D2AD27C72B053969004963B9 /* Products */;
 			projectDirPath = "";
@@ -617,6 +621,14 @@
 				minimumVersion = 7.10.0;
 			};
 		};
+		D2BD13E72B1ECA3C00CDA1EB /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -639,6 +651,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D2AD285A2B17263D003080DA /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		D2BD13E82B1ECA3C00CDA1EB /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2BD13E72B1ECA3C00CDA1EB /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

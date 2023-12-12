@@ -8,16 +8,24 @@
 import Foundation
 import SwiftUI
 import NavigationSearchBar
+import RealmSwift
 struct HistoryView : View {
     @State private var search = ""
     @State var scopeSelection: Int = 0
+    @ObservedResults(HistoryModel.self) var historyList
+    
     var body : some View {
         NavigationView {
             VStack{
                 List {
-                    Text("Qr code")
-                    Text("Bar code")
-                }
+                    ForEach(historyList ,id:\.self) { value in
+                        HStack {
+                            VStack(alignment: .leading, spacing: 0) {
+                                Text("\(value.text ?? "")")
+                            }
+                        }
+                    }
+                }.listStyle(.plain)
             }
             .navigationTitle("History")
             .navigationBarTitleDisplayMode(.inline)

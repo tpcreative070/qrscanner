@@ -57,6 +57,7 @@ class HistoryModel  : Object ,Identifiable {
         self.text = data._text
         self.typeSave = .GENERATE
         self.createType = EnumType.TEXT.rawValue
+        self.createDatetime = Date().stringDateTime()
     }
     
     //uri
@@ -140,6 +141,43 @@ class HistoryModel  : Object ,Identifiable {
         super.init()
         self.text = text
     }
+    
+    
+    //Display
+    var iconView : String {
+        switch createType {
+        case EnumType.BARCODE.rawValue:
+            return "barcode"
+        default:
+            return "qrcode"
+        }
+    }
+    
+    var titleView : String {
+        var qrcode = ""
+        switch createType {
+        case EnumType.BARCODE.rawValue:
+            qrcode =  "Bar code"
+        default:
+            qrcode =  "QR code"
+        }
+        switch createType {
+        case EnumType.TEXT.rawValue:
+            return "\(qrcode) \u{2022} Text"
+        default:
+            return "\(qrcode) \u{2022} Text"
+        }
+    }
+    
+    var contentView : String {
+        switch createType {
+        case EnumType.TEXT.rawValue:
+            return text ?? ""
+        default:
+            return ""
+        }
+    }
+    
 }
 
 enum EnumTypeSave : String, PersistableEnum {

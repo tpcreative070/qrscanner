@@ -16,6 +16,13 @@ extension Date {
         return Int((self.timeIntervalSince1970).rounded())
   }
     
+    func stringDateTime()  -> String {
+      let date = self
+      let df = DateFormatter()
+      df.dateFormat = "yyyy-MM-dd HH:mm:ss"
+      return df.string(from: date)
+    }
+    
   func toString() -> String {
     let format = DateFormatter()
     format.dateFormat = "yyyy-MM-dd HH:mm"

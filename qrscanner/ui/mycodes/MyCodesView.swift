@@ -10,16 +10,29 @@ import SwiftUI
 import RealmSwift
 struct MyCodesView  : View{
     
-    @ObservedResults(HistoryModel.self) var persons
+    @ObservedResults(HistoryModel.self) var myCodesList
+  
     @State var isPresented : Bool = false
     var body: some View {
         NavigationView {
-              ScrollView {
-                  VStack{
-                      
-                  }//: VStack
-              }//: Scroll
-              .toolbar(content: {
+            VStack(alignment: .leading, content: {
+                List {
+                    ForEach(myCodesList, id: \.self){ index in
+                        HStack {
+                            Image(systemName: index.iconView).frame(width:30,height:30)
+                            VStack(alignment: .leading, content: {
+                                Text(index.titleView)
+                                Text(index.contentView)
+                                    .foregroundColor(.gray)
+                                    .font(.system(size: 14))
+                                   
+                            })
+                        }
+                  }
+                }
+                .listStyle(.plain)
+            })
+            .toolbar(content: {
                   ToolbarItemGroup(placement: .navigationBarLeading) {
                       Button {
                           isPresented = true
@@ -42,19 +55,9 @@ struct MyCodesView  : View{
               })
               .navigationBarTitle("My codes")
               .navigationBarTitleDisplayMode(.inline)
-              .padding()
+              .background(.white)
           }//: Navigation
-     
-//        List {
-//            ForEach(persons) { person in
-//                Text(person.id)
-//            }
-//            .onDelete(perform: $persons.remove)
-//        }.onAppear(){
-//            $persons.append(HistoryModel())
-//        }
     }
-    
 }
 
 #Preview {
